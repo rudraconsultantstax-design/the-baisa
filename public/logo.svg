@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">The Baisa logo</title>
+  <desc id="desc">Circular monogram logo for The Baisa</desc>
+  <circle cx="128" cy="128" r="120" fill="#F5F0E8" stroke="#2C1810" stroke-width="8" />
+  <circle cx="128" cy="128" r="96" fill="none" stroke="#D4A853" stroke-width="3" stroke-dasharray="4 10" />
+  <text x="128" y="114" text-anchor="middle" font-size="56" font-family="Georgia, serif" font-weight="700" fill="#2C1810">TB</text>
+  <text x="128" y="154" text-anchor="middle" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="4" fill="#C65D3A">JAIPUR</text>
+</svg>
