@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --rust: #c65d3a;
+  --cream: #f5f0e8;
+  --brown: #2c1810;
+  --ink: #1e120d;
+  --muted: #7f6b5d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--brown);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fabric-pattern {
+  background:
+    linear-gradient(rgba(44, 24, 16, 0.56), rgba(44, 24, 16, 0.72)),
+    url("https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1800&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+.jaipur-border {
+  background-image:
+    radial-gradient(circle at 12px 12px, rgba(198, 93, 58, 0.2) 2px, transparent 2.5px),
+    radial-gradient(circle at 36px 36px, rgba(44, 24, 16, 0.1) 2px, transparent 2.5px);
+  background-size: 48px 48px;
+}
