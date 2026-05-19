@@ -3,9 +3,32 @@ import { ProductCard } from "@/components/ProductCard";
 import { business } from "@/lib/business";
 import { products } from "@/lib/products";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ClothingStore",
+  name: business.brand,
+  description: business.footerAbout,
+  url: `https://${business.website}`,
+  telephone: business.phone,
+  image: `https://${business.website}/logo.svg`,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Sanganer",
+    addressLocality: "Jaipur",
+    addressRegion: "Rajasthan",
+    postalCode: "303902",
+    addressCountry: "IN"
+  },
+  sameAs: [business.instagramUrl]
+};
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="fabric-pattern min-h-[76vh] px-4 text-white">
         <div className="mx-auto flex min-h-[76vh] max-w-7xl items-center py-20">
           <div className="max-w-3xl">

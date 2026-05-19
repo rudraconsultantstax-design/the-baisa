@@ -6,7 +6,9 @@ export const business = {
   address: "Sanganer, Jaipur, Rajasthan 303902",
   phone: "+91 9251022710",
   whatsapp: "+91 9251022710",
-  whatsappUrl: "https://wa.me/919251022710",
+  whatsappUrl:
+    "https://wa.me/919251022710?text=" +
+    encodeURIComponent("Hi The Baisa, I would like to know more about your ethnic wear collection."),
   instagram: "@the_baisa",
   instagramUrl: "https://instagram.com/the_baisa",
   timings: "Mon-Sat 10am to 7pm",

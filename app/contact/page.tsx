@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { business } from "@/lib/business";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: `Contact The Baisa in ${business.location}. WhatsApp ${business.whatsapp}, phone ${business.phone}, Instagram ${business.instagram}.`
+};
 
 const details = [
   ["Address", business.address],
@@ -20,12 +26,22 @@ export default function ContactPage() {
         <div className="mt-8 flex flex-wrap gap-4">
           <a
             href={business.whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#C65D3A] px-6 py-4 text-sm font-black uppercase tracking-[0.14em] text-white transition hover:bg-[#2C1810]"
           >
             Chat with us on WhatsApp
           </a>
           <a
+            href={`tel:${business.phone.replaceAll(" ", "")}`}
+            className="border border-[#2C1810] px-6 py-4 text-sm font-black uppercase tracking-[0.14em] text-[#2C1810] transition hover:border-[#C65D3A] hover:text-[#C65D3A]"
+          >
+            Call {business.phone}
+          </a>
+          <a
             href={business.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="border border-[#2C1810] px-6 py-4 text-sm font-black uppercase tracking-[0.14em] text-[#2C1810] transition hover:border-[#C65D3A] hover:text-[#C65D3A]"
           >
             Instagram {business.instagram}

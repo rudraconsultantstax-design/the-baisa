@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import { ProductFilters } from "@/components/ProductFilters";
+
+export const metadata: Metadata = {
+  title: "Catalog",
+  description:
+    "Browse The Baisa catalog — Rajputi suit sets, bandhej odhanis, floral prints, and festive collections from Sanganer, Jaipur."
+};
 
 export default function CatalogPage() {
   return (

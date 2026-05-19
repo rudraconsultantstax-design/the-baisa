@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { business } from "@/lib/business";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: `${business.brand} is a premium ethnic wear brand from ${business.location}, crafting authentic Sanganer-made Rajputi suits, odhanis, and prints.`
+};
 
 export default function AboutPage() {
   return (

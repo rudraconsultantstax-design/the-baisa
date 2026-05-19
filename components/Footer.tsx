@@ -4,7 +4,9 @@ import { business } from "@/lib/business";
 const quickLinks = [
   ["Home", "/"],
   ["Catalog", "/catalog"],
+  ["All Collections", "/all-collections"],
   ["All Products", "/all-products"],
+  ["Bulk / Wholesale", "/bulk-wholesale"],
   ["About", "/about"],
   ["Size Chart", "/size-chart"],
   ["FAQs", "/faqs"],
@@ -35,8 +37,12 @@ export function Footer() {
           <div className="mt-4 grid gap-3 text-sm">
             <span>Address: {business.address}</span>
             <a href={`tel:${business.phone.replaceAll(" ", "")}`}>Phone: {business.phone}</a>
-            <a href={business.instagramUrl}>Instagram: {business.instagram}</a>
-            <a href={business.whatsappUrl}>WhatsApp: {business.whatsapp}</a>
+            <a href={business.instagramUrl} target="_blank" rel="noopener noreferrer">
+              Instagram: {business.instagram}
+            </a>
+            <a href={business.whatsappUrl} target="_blank" rel="noopener noreferrer">
+              WhatsApp: {business.whatsapp}
+            </a>
           </div>
         </div>
       </div>
