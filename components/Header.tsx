@@ -5,9 +5,9 @@ import { business } from "@/lib/business";
 const navItems = [
   ["HOME", "/"],
   ["CATALOG", "/catalog"],
-  ["ALL COLLECTIONS", "/all-collections"],
-  ["ALL PRODUCTS", "/all-products"],
-  ["ABOUT", "/about"],
+  ["COLLECTIONS", "/all-collections"],
+  ["NEW DROP CLUB", "/new-drop-club"],
+  ["WHOLESALE", "/bulk-wholesale"],
   ["SIZE CHART", "/size-chart"],
   ["FAQS", "/faqs"],
   ["CONTACT", "/contact"]
@@ -36,12 +36,14 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <Link
-          href="/admin"
-          className="hidden border border-[#C65D3A] px-4 py-2 text-xs font-bold uppercase tracking-[0.14em] text-[#C65D3A] transition hover:bg-[#C65D3A] hover:text-white sm:inline-flex"
+        <a
+          href={business.whatsappCatalogUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden bg-[#25D366] px-4 py-2 text-xs font-bold uppercase tracking-[0.14em] text-white transition hover:bg-[#1ebe5d] sm:inline-flex"
         >
-          Admin
-        </Link>
+          WhatsApp Catalog
+        </a>
       </div>
       <nav className="flex gap-4 overflow-x-auto border-t border-[#2C1810]/10 px-4 py-3 text-xs font-bold tracking-[0.12em] text-[#2C1810] lg:hidden">
         {navItems.map(([label, href]) => (
